@@ -1,0 +1,77 @@
+{
+    "name": "lifecraft/api",
+    "tables": {
+        "player_roles": {
+
+        },
+        "players": {
+
+        },
+        "hero_samples": {
+
+        },
+        "heroes": {
+
+        },
+        "attributes": {
+
+        },
+        "relations": {
+
+        },
+        "tasks_samples": {
+
+        },
+        "tasks": {
+
+        },
+        "dangers_samples": {
+
+        },
+        "dangers": {
+
+        },
+        "stories_samples": {
+
+        },
+        "stories": {
+
+        },
+        "achievements_samples": {
+
+        },
+        "achievements": {
+
+        },
+        "ranks_samples": {
+
+        },
+        "ranks": {
+
+        },
+        "hero_stats": {
+
+        },
+        "structures_samples": {
+
+        },
+        "structures": {
+
+        },
+        "pets_samples": {
+
+        },
+        "pets": {
+
+        },
+        "avatars": {
+
+        },
+        "artefacts_samples": {
+
+        },
+        "artefacts": {
+            
+        }
+    }
+}

@@ -7,8 +7,9 @@ use extas\interfaces\IHasName;
 use extas\interfaces\IHasValue;
 use extas\interfaces\IItem;
 use lifecraft\interfaces\levels\IHaveLevel;
+use lifecraft\interfaces\owners\IHaveOwner;
 
-interface IAttribute extends IItem, IHasId, IHasName, IHasDescription, IHasValue, IHaveLevel
+interface IAttribute extends IItem, IHasId, IHasName, IHasDescription, IHasValue, IHaveLevel, IHaveOwner
 {
     public const SUBJECT = 'lifecraft.attribute';
 
