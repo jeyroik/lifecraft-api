@@ -1,0 +1,15 @@
+{
+    "name": "lifecraft/api",
+    "require": {
+        "extas-foundation": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lifecraft\\": "src/",
+            "tests\\": "tests/"
+        }
+    },
+    "scripts": {
+      "test": "vendor/bin/phpunit --testdox --coverage-clover=coverage.xml --whitelist=src tests"
+    }
+}
