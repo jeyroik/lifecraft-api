@@ -1,5 +1,5 @@
 <?php
-namespace lifecraft\interfaces\urls;
+namespace lifecraft\interfaces\attributes;
 
 interface IHaveUrl
 {

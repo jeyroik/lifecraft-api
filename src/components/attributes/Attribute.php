@@ -45,7 +45,7 @@ class Attribute extends Item implements IAttribute
 
     public function inc(int $increment): int
     {
-        if (($this->getValue()+$increment) <= $this->getMaxValue()) {
+        if ($this->canInc($increment)) {
             $this->config[static::FIELD__VALUE] += $increment;
             return $this->config[static::FIELD__VALUE];
         }
@@ -55,12 +55,22 @@ class Attribute extends Item implements IAttribute
 
     public function dec(int $decrement): int
     {
-        if (($this->getValue()-$decrement) <= $this->getMinValue()) {
+        if ($this->canDec($decrement)) {
             $this->config[static::FIELD__VALUE] -= $decrement;
             return $this->config[static::FIELD__VALUE];
         }
 
         throw new \Exception('Can not decrement value: incorrect decrementer');
+    }
+
+    public function canInc(int $increment): bool
+    {
+        return $this->getValue()+$increment <= $this->getMaxValue();
+    }
+
+    public function canDec(int $decrement): bool
+    {
+        return $this->getValue()-$decrement <= $this->getMinValue();
     }
 
     protected function getSubjectForExtension(): string

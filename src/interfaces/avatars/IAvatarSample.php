@@ -6,7 +6,7 @@ use extas\interfaces\IHasId;
 use extas\interfaces\IHasType;
 use extas\interfaces\IItem;
 use lifecraft\interfaces\attributes\IHaveRarity;
-use lifecraft\interfaces\urls\IHaveUrl;
+use lifecraft\interfaces\attributes\IHaveUrl;
 
 interface IAvatarSample extends IItem, IHasId, IHasType, IHasDescription, IHaveRarity, IHaveUrl
 {

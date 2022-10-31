@@ -9,7 +9,7 @@ interface IHaveExperience
     public function setExperience(IAttribute $attribute): IHaveExperience;
 
     public function getExperienceValue(): int;
-    public function setExperienceValue(int $Experience): IHaveExperience;
+    public function setExperienceValue(int $experience): IHaveExperience;
 
     public function incExperience(int $increment): int;
     public function decExperience(int $decrement): int;

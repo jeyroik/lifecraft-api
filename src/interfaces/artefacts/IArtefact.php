@@ -1,13 +1,9 @@
 <?php
 namespace lifecraft\interfaces\artefacts;
 
-use extas\interfaces\IHasCreatedAt;
-use extas\interfaces\IHasId;
-use extas\interfaces\IItem;
-use extas\interfaces\samples\IHasSample;
 use lifecraft\interfaces\owners\IHaveOwner;
 
-interface IArtefact extends IItem, IHasSample, IHasId, IHasCreatedAt, IHaveOwner
+interface IArtefact extends IArtefactSample, IHaveOwner
 {
-    public const SUBJECT = 'lifecraft.artefact';
+    public const SUBJECT__ARTEFACT = 'lifecraft.artefact';
 }

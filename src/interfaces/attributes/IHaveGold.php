@@ -9,7 +9,7 @@ interface IHaveGold
     public function setGold(IAttribute $attribute): IHaveGold;
 
     public function getGoldValue(): int;
-    public function setGoldValue(int $Gold): IHaveGold;
+    public function setGoldValue(int $gold): IHaveGold;
 
     public function incGold(int $increment): int;
     public function decGold(int $decrement): int;

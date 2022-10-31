@@ -24,4 +24,7 @@ interface IAttribute extends IItem, IHasId, IHasName, IHasDescription, IHasValue
 
     public function inc(int $increment): int;
     public function dec(int $decrement): int;
+
+    public function canInc(int $increment): bool;
+    public function canDec(int $decrement): bool;
 }

@@ -9,7 +9,7 @@ interface IHaveExpBuffered
     public function setExpBuffered(IAttribute $attribute): IHaveExpBuffered;
 
     public function getExpBufferedValue(): int;
-    public function setExpBufferedValue(int $ExpBuffered): IHaveExpBuffered;
+    public function setExpBufferedValue(int $expBuffered): IHaveExpBuffered;
 
     public function incExpBuffered(int $increment): int;
     public function decExpBuffered(int $decrement): int;
