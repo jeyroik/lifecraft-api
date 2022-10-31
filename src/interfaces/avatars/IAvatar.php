@@ -1,18 +1,9 @@
 <?php
 namespace lifecraft\interfaces\avatars;
 
-use extas\interfaces\IHasDescription;
-use extas\interfaces\IHasId;
-use extas\interfaces\IHasType;
-use extas\interfaces\IItem;
-use lifecraft\interfaces\attributes\IHaveRarity;
+use lifecraft\interfaces\owners\IHaveOwner;
 
-interface IAvatar extends IItem, IHasId, IHasType, IHasDescription, IHaveRarity
+interface IAvatar extends IAvatarSample, IHaveOwner
 {
-    public const SUBJECT = 'lifecraft.avatar';
-
-    public const FIELD__URL = 'url';
-
-    public function getUrl(): string;
-    public function setUrl(string $url): IAvatar;
+    public const SUBJECT__AVATAR = 'lifecraft.avatar';
 }
