@@ -1,9 +1,9 @@
 <?php
 namespace lifecraft\interfaces\structures;
 
-use lifecraft\interfaces\players\IHavePlayer;
+use lifecraft\interfaces\heroes\IHaveHero;
 
-interface IStructure extends IStructureSample, IHavePlayer
+interface IStructure extends IStructureSample, IHaveHero
 {
     public const SUBJECT__STRUCTURE = 'lifecraft.structure';
 }

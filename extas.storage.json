@@ -10,6 +10,14 @@
                 "create-before": "\\lifecraft\\components\\UUid::generateFor($item);"
             }
         },
+        "roles": {
+            "namespace": "repositories",
+            "item_class": "\\lifecraft\\components\\players\\roles\\Role",
+            "pk": "id",
+            "code": {
+                "create-before": "\\lifecraft\\components\\UUid::generateFor($item);"
+            }
+        },
         "players": {
             "namespace": "repositories",
             "item_class": "\\lifecraft\\components\\players\\Player",

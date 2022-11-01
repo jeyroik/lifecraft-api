@@ -6,5 +6,5 @@ use lifecraft\interfaces\owners\IHaveOwner;
 
 interface IPet extends IPetSample, IHaveOwner, IHaveExperience
 {
-    public const SUBJECT = 'lifecraft.pet';
+    public const SUBJECT__PET = 'lifecraft.pet';
 }

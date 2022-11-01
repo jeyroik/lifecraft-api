@@ -5,7 +5,7 @@ use extas\interfaces\IHasCreatedAt;
 use extas\interfaces\IHasId;
 use lifecraft\interfaces\skills\IHaveSkill;
 
-interface IHeroSkills extends IHaveHero, IHaveSkill, IHasId, IHasCreatedAt
+interface IHeroSkill extends IHaveHero, IHaveSkill, IHasId, IHasCreatedAt
 {
-
+    public const SUBJECT = 'liffecraft.hero.skill.link';
 }
