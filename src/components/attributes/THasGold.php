@@ -27,24 +27,4 @@ trait THasGold
     {
         return $this->setAttributeValue($this->getGold(), $gold, IHaveGold::FIELD__GOLD);
     }
-
-    public function incGold(int $increment): int
-    {
-        return $this->incAttribute($this->getGold(), $increment);
-    }
-
-    public function decGold(int $decrement): int
-    {
-        return $this->decAttribute($this->getGold(), $decrement);
-    }
-
-    public function canIncGold(int $increment): bool
-    {
-        return ($g = $this->getGold()) ? $g->canInc($increment) : false;
-    }
-
-    public function canDecGold(int $decrement): bool
-    {
-        return ($g = $this->getGold()) ? $g->canDec($decrement) : false;
-    }
 }

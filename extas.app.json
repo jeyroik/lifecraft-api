@@ -1,0 +1,166 @@
+{
+    "attributes_samples": [
+        {
+            "name": "health",
+            "title": "\u0417\u0434\u043e\u0440\u043e\u0432\u044c\u0435",
+            "description": "\u0417\u0434\u043e\u0440\u043e\u0432\u044c\u0435",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherHealth",
+            "value": 10,
+            "min_value": 1,
+            "max_value": -1
+        },
+        {
+            "name": "gold",
+            "title": "\u0417\u043e\u043b\u043e\u0442\u043e",
+            "description": "\u0417\u043e\u043b\u043e\u0442\u043e",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherGold",
+            "value": 0,
+            "min_value": 0,
+            "max_value": -1
+        },
+        {
+            "name": "energy",
+            "title": "\u042d\u043d\u0435\u0440\u0433\u0438\u044f",
+            "description": "\u042d\u043d\u0435\u0440\u0433\u0438\u044f",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherEnergy",
+            "value": 10,
+            "min_value": 1,
+            "max_value": -1
+        },
+        {
+            "name": "rarity",
+            "title": "\u0420\u0435\u0434\u043a\u043e\u0441\u0442\u044c",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0430\u044f \u0440\u0435\u0434\u043a\u043e\u0441\u0442\u044c",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherRarity",
+            "value": 1,
+            "min_value": 1,
+            "max_value": 6
+        },
+        {
+            "name": "experience",
+            "title": "\u041e\u043f\u044b\u0442",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u043e\u043f\u044b\u0442",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherExperience",
+            "value": 0,
+            "min_value": 0,
+            "max_value": -1
+        },
+        {
+            "name": "gold",
+            "title": "\u0417\u043e\u043b\u043e\u0442\u043e",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0435\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0437\u043e\u043b\u043e\u0442\u0430",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherGold",
+            "value": 0,
+            "min_value": 0,
+            "max_value": -1
+        },
+        {
+            "name": "exp_buffered",
+            "title": "\u041d\u0430\u043a\u043e\u043f\u043b\u0435\u043d\u043d\u044b\u0439 \u043e\u043f\u044b\u0442",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u043d\u0430\u043a\u043e\u043f\u043b\u0435\u043d\u043d\u044b\u0439 \u043e\u043f\u044b\u0442",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherExpBuffered",
+            "value": 0,
+            "min_value": 0,
+            "max_value": -1
+        },
+        {
+            "name": "level",
+            "title": "\u0423\u0440\u043e\u0432\u0435\u043d\u044c",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0443\u0440\u043e\u0432\u0435\u043d\u044c",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherLevel",
+            "value": 1,
+            "min_value": 1,
+            "max_value": -1
+        },
+        {
+            "name": "level_required",
+            "title": "\u0422\u0440\u0435\u0431\u0443\u0435\u043c\u044b\u0439 \u043e\u043f\u044b\u0442",
+            "description": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0442\u0440\u0435\u0431\u0443\u0435\u043c\u044b\u0439 \u043e\u043f\u044b\u0442",
+            "level": 1,
+            "level_dispatcher": "\\lifecraft\\components\\levels\\dispatchers\\DispatcherRequiredLevel",
+            "value": 1,
+            "min_value": 1,
+            "max_value": -1
+        }
+    ],
+    "routes": [
+        {
+            "name": "\/json\/v1\/",
+            "title": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f. v1",
+            "description": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0447\u043a\u0430 API v1",
+            "method": "get",
+            "class": "\\RouteMain"
+        },
+        {
+            "name": "\/json\/v1\/attribute",
+            "method": "get",
+            "title": "\u0421\u043f\u0438\u0441\u043e\u043a \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u043e\u0432",
+            "description": "\u0421\u043f\u0438\u0441\u043e\u043a \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0445 \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u043e\u0432 \u043f\u043e \u0432\u0441\u0435\u043c \u0441\u0443\u0449\u043d\u043e\u0441\u0442\u044f\u043c",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\attributes\\RouteListAttribute"
+        },
+        {
+            "name": "\/json\/v1\/player",
+            "title": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0438\u0433\u0440\u043e\u043a\u0430",
+            "description": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u0438\u0433\u0440\u043e\u043a\u0430",
+            "method": "post",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\players\\RouteCreatePlayer"
+        },
+        {
+            "name": "\/json\/v1\/player\/{identity}",
+            "title": "\u0418\u043d\u043e\u0440\u0444\u043c\u0430\u0446\u0438\u044f \u043e\u0431 \u0438\u0433\u0440\u043e\u043a\u0435",
+            "description": "\u0414\u0435\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e\u0431 \u0438\u0433\u0440\u043e\u043a\u0435",
+            "method": "post",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\players\\RouteViewPlayer"
+        },
+        {
+            "name": "\/json\/v1\/player",
+            "title": "\u0421\u043f\u0438\u0441\u043e\u043a \u0438\u0433\u0440\u043e\u043a\u043e\u0432",
+            "description": "\u0421\u043f\u0438\u0441\u043e\u043a \u0432\u0441\u0435\u0445 \u0438\u0433\u0440\u043e\u043a\u043e\u0432",
+            "method": "get",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\players\\RouteListPlayer"
+        },
+        {
+            "name": "\/json\/v1\/attribute-sample",
+            "title": "\u0421\u043f\u0438\u0441\u043e\u043a \u0448\u0430\u0431\u043b\u043e\u043d\u043e\u0432 \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u043e\u0432",
+            "description": "\u0421\u043f\u0438\u0441\u043e\u043a \u043f\u0440\u0435\u0434\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044b\u0445 \u0448\u0430\u0431\u043b\u043e\u043d\u043e\u0432 \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u043e\u0432",
+            "method": "get",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\attributes\\RouteListAttributeSample"
+        },
+        {
+            "name": "\/json\/v1\/hero-sample",
+            "title": "\u0421\u043f\u0438\u0441\u043e\u043a \u0448\u0430\u0431\u043b\u043e\u043d\u043e\u0432 \u0433\u0435\u0440\u043e\u0435\u0432",
+            "description": "\u0421\u043f\u0438\u0441\u043e\u043a \u0448\u0430\u0431\u043b\u043e\u043d\u043e\u0432 \u0433\u0435\u0440\u043e\u0435\u0432",
+            "method": "get",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\heroes\\RouteListHeroSample"
+        },
+        {
+            "name": "\/json\/v1\/hero-sample",
+            "title": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0448\u0430\u0431\u043b\u043e\u043d\u0430 \u0433\u0435\u0440\u043e\u044f",
+            "description": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0448\u0430\u0431\u043b\u043e\u043d\u0430 \u0433\u0435\u0440\u043e\u044f",
+            "method": "post",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\heroes\\RouteCreateHeroSample"
+        },
+        {
+            "name": "\/json\/v1\/hero",
+            "title": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0433\u0435\u0440\u043e\u044f",
+            "description": "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0433\u0435\u0440\u043e\u044f \u043f\u043e \u0448\u0430\u0431\u043b\u043e\u043d\u0443",
+            "method": "post",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\heroes\\RouteCreateHero"
+        },
+        {
+            "name": "\/json\/v1\/hero",
+            "title": "\u0421\u043f\u0438\u0441\u043e\u043a \u0433\u0435\u0440\u043e\u0435\u0432",
+            "description": "\u0421\u043f\u0438\u0441\u043e\u043a \u0433\u0435\u0440\u043e\u0435\u043e\u0432",
+            "method": "get",
+            "class": "\\lifecraft\\components\\api\\routes\\json\\heroes\\RouteListHero"
+        }
+    ]
+}

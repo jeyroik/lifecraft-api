@@ -10,10 +10,4 @@ interface IHaveEnergy
 
     public function getEnergyValue(): int;
     public function setEnergyValue(int $energy): IHaveEnergy;
-
-    public function incEnergy(int $increment): int;
-    public function decEnergy(int $decrement): int;
-
-    public function canIncEnergy(int $increment): bool;
-    public function canDecEnergy(int $decrement): bool;
 }

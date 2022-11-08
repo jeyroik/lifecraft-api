@@ -6,7 +6,7 @@ use extas\interfaces\IHasId;
 use extas\interfaces\IItem;
 use lifecraft\interfaces\attributes\IHaveEffectDescription;
 use lifecraft\interfaces\avatars\IHaveAvatar;
-use lifecraft\interfaces\levels\IHaveRequiredLevel;
+use lifecraft\interfaces\attributes\IHaveRequiredLevel;
 use lifecraft\interfaces\owners\IHaveOwner;
 
 /**

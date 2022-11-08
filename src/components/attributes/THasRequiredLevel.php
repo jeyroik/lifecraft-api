@@ -1,17 +1,20 @@
 <?php
-namespace lifecraft\components\levels;
+namespace lifecraft\components\attributes;
 
-use lifecraft\interfaces\levels\IHaveLevel;
-use lifecraft\interfaces\levels\IHaveRequiredLevel;
+use lifecraft\interfaces\attributes\IAttribute;
+use lifecraft\interfaces\attributes\IHaveLevel;
+use lifecraft\interfaces\attributes\IHaveRequiredLevel;
 
 /**
  * @property array $config
  */
 trait THasRequiredLevel
 {
-    public function getRequiredLevel(): int
+    use TAttribute;
+
+    public function getRequiredLevel(): IAttribute
     {
-        return $this->config[IHaveRequiredLevel::FIELD__LEVEL_REQUIRED] ?? 0;
+        return $this->getAttrByOwner(IHaveRequiredLevel::FIELD__LEVEL_REQUIRED);
     }
 
     public function setRequiredLevel(int $level): IHaveRequiredLevel

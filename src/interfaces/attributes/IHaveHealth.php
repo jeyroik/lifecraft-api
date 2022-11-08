@@ -10,10 +10,4 @@ interface IHaveHealth
 
     public function getHealthValue(): int;
     public function setHealthValue(int $health): IHaveHealth;
-
-    public function incHealth(int $increment): int;
-    public function decHealth(int $decrement): int;
-
-    public function canIncHealth(int $increment): bool;
-    public function canDecHealth(int $decrement): bool;
 }

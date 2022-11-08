@@ -5,8 +5,8 @@ use extas\components\Item;
 use extas\components\TDispatcherWrapper;
 use extas\components\THasId;
 use lifecraft\components\attributes\THasEffectDescription;
+use lifecraft\components\attributes\THasRequiredLevel;
 use lifecraft\components\avatars\THasAvatar;
-use lifecraft\components\levels\THasRequiredLevel;
 use lifecraft\components\owners\THasOwner;
 use lifecraft\interfaces\skills\ISkill;
 

@@ -30,24 +30,4 @@ trait THasExpBuffered
     {
         return $this->setAttributeValue($this->getExpBuffered(), $expBuffered, IHaveExpBuffered::FIELD__EXP_BUFFERED);
     }
-
-    public function incExpBuffered(int $increment): int
-    {
-        return $this->incAttribute($this->getExpBuffered(), $increment);
-    }
-
-    public function decExpBuffered(int $decrement): int
-    {
-        return $this->decAttribute($this->getExpBuffered(), $decrement);
-    }
-
-    public function canIncExpBuffered(int $increment): bool
-    {
-        return ($b = $this->getExpBuffered()) ? $b->canInc($increment) : false;
-    }
-
-    public function canDecExpBuffered(int $decrement): bool
-    {
-        return ($b = $this->getExpBuffered()) ? $b->canDec($decrement) : false;
-    }
 }

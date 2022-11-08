@@ -10,10 +10,4 @@ interface IHaveExperience
 
     public function getExperienceValue(): int;
     public function setExperienceValue(int $experience): IHaveExperience;
-
-    public function incExperience(int $increment): int;
-    public function decExperience(int $decrement): int;
-
-    public function canIncExperience(int $increment): bool;
-    public function canDecExperience(int $decrement): bool;
 }

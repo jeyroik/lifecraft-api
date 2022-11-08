@@ -1,12 +1,18 @@
 {
     "name": "lifecraft/api",
     "require": {
-        "extas-foundation": "6.*"
+        "ramsey/uuid": "4.*",
+        "jeyroik/extas-foundation": "6.*",
+        "jeyroik/extas-api": "1.*",
+        "jeyroik/extas-config-php": "0.*",
+        "vlucas/phpdotenv": "5.*"
     },
     "autoload": {
         "psr-4": {
             "lifecraft\\": "src/",
-            "tests\\": "tests/"
+            "tests\\": "tests/",
+            "extas\\components\\repositories\\": "resources/",
+            "repositories\\": "resources/"
         }
     },
     "scripts": {

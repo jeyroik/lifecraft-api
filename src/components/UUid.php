@@ -8,7 +8,7 @@ class UUid
 {
     public static function generateFor(IHasId &$item): void
     {
-        $item->setId(UuidRamsey::uuid4()->toString());
+        $item->setId(static::getId());
     }
 
     public static function getId(): string

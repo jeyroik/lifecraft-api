@@ -10,10 +10,4 @@ interface IHaveGold
 
     public function getGoldValue(): int;
     public function setGoldValue(int $gold): IHaveGold;
-
-    public function incGold(int $increment): int;
-    public function decGold(int $decrement): int;
-
-    public function canIncGold(int $increment): bool;
-    public function canDecGold(int $decrement): bool;
 }

@@ -11,8 +11,8 @@ use lifecraft\components\attributes\THasEnergy;
 use lifecraft\components\attributes\THasExpBuffered;
 use lifecraft\components\attributes\THasGold;
 use lifecraft\components\attributes\THasHealth;
+use lifecraft\components\attributes\THasLevel;
 use lifecraft\components\avatars\THasAvatar;
-use lifecraft\components\levels\THasLevel;
 use lifecraft\interfaces\pets\IPetSample;
 
 class PetSample extends Item implements IPetSample

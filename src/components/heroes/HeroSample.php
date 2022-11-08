@@ -9,8 +9,8 @@ use lifecraft\components\attributes\THasEnergy;
 use lifecraft\components\attributes\THasExperience;
 use lifecraft\components\attributes\THasGold;
 use lifecraft\components\attributes\THasHealth;
+use lifecraft\components\attributes\THasLevel;
 use lifecraft\components\avatars\THasAvatar;
-use lifecraft\components\levels\THasLevel;
 use lifecraft\interfaces\heroes\IHeroSample;
 
 class HeroSample extends Item implements IHeroSample

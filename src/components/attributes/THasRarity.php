@@ -24,16 +24,6 @@ trait THasRarity
         return $this->attachAttribute($attribute);
     }
 
-    public function incRarity(int $increment): int
-    {
-        return $this->incAttribute($this->getRarity(), $increment);
-    }
-
-    public function decRarity(int $decrement): int
-    {
-        return $this->incAttribute($this->getRarity(), $decrement);
-    }
-
     public function getRarityValue(): int
     {
         return $this->config[IHaveRarity::FIELD__RARITY];
@@ -42,15 +32,5 @@ trait THasRarity
     public function setRarityValue(int $value): IHaveRarity
     {
         return $this->setAttributeValue($this->getRarity(), $value, IHaveRarity::FIELD__RARITY);
-    }
-
-    public function canIncRarity(int $increment): bool
-    {
-        return ($r = $this->getRarity()) ? $r->canInc($increment) : false;
-    }
-
-    public function canDecRarity(int $decrement): bool
-    {
-        return ($r = $this->getRarity()) ? $r->canDec($decrement) : false;
     }
 }

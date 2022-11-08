@@ -9,6 +9,14 @@ use lifecraft\interfaces\owners\IHaveOwner;
  */
 trait THasOwner
 {
+    /**
+     * @description_en Owner ID
+     * @description_ru ID владельца
+     * @use_in ui
+     * @return_max 36
+     *
+     * @return uuid
+     */
     public function getOwnerId(): string
     {
         return $this->config[IHaveOwner::FIELD__OWNER_ID] ?? '';

@@ -32,24 +32,4 @@ trait THasHealth
     {
         return $this->setAttributeValue($this->getHealth(), $health, IHaveHealth::FIELD__HEALTH);
     }
-
-    public function incHealth(int $increment): int
-    {
-        return $this->incAttribute($this->getHealth(), $increment);
-    }
-
-    public function decHealth(int $decrement): int
-    {
-        return $this->decAttribute($this->getHealth(), $decrement);
-    }
-
-    public function canIncHealth(int $increment): bool
-    {
-        return ($h = $this->getHealth()) ? $h->canInc($increment) : false;
-    }
-
-    public function canDecHealth(int $decrement): bool
-    {
-        return ($h = $this->getHealth()) ? $h->canDec($decrement) : false;
-    }
 }
